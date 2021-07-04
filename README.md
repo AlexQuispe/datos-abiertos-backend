@@ -26,3 +26,13 @@ https://flake8.pycqa.org/en/latest/index.html
 ```bash
 python manage.py makemigrations
 ```
+
+Posteriormente, para crear el nuevo modelo en la base de datos.
+
+```bash
+python manage.py migrate
+```
+
+## Apidoc
+
+Ver el archivo [APIDOC.md](./APIDOC.md)
