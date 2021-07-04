@@ -7,7 +7,7 @@
 sudo apt update
 
 # instalación de paquetes básicos
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev libpq-dev
 
 # descargamos la versión 3.9.6 de python
 cd ~/
@@ -83,12 +83,12 @@ pip install -r requirements.txt
 ## 3. Levanta el servicio en modo desarrollo
 
 ```bash
-# Sincroniza la base de datos (SQLite)
+# Sincroniza la base de datos
 python manage.py migrate
 ```
 
 ```bash
-# Crea un usuario por defecto
+# [OPCIONAL] Crea un usuario por defecto
 python manage.py createsuperuser --email admin@example.com --username admin
 ```
 

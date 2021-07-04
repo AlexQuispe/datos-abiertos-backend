@@ -20,3 +20,9 @@ Se recomienda utilizar las siguentes herramientas en el editor para validar y fo
 - formatter `autopep8`
 
 https://flake8.pycqa.org/en/latest/index.html
+
+**Nota.-** Después de adicionar un nuevo modelo, ejecutar el siguiente comando para crear su respectiva migración.
+
+```bash
+python manage.py makemigrations
+```
